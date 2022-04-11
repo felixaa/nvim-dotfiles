@@ -140,6 +140,9 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
+" Nvim tree avoid split
+:set splitright
+
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
