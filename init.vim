@@ -104,18 +104,19 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
-if has('nvim') || has('termguicolors')
-    if exists('+termguicolors')
-      let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-      let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-      set termguicolors
-    endif
-endif
+" if has('nvim') || has('termguicolors')
+"     if exists('+termguicolors')
+"       let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"       let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"       set termguicolors
+"     endif
+" endif
 
+set termguicolors
 syntax enable
 
 " hack to detect prisma filetypes
-" autocmd BufNewFile,BufRead *.prisma setlocal filetype=prisma
+autocmd BufNewFile,BufRead *.prisma setlocal filetype=prisma
 
 "aura
 "spaceduck
@@ -124,12 +125,11 @@ syntax enable
 "moonfly
 "seoul256
 "nord
-"
+"everforest
+"ayu
+"aylin
+" let ayucolor="dark"   " for dark version of theme
 colorscheme dracula
-
-"transparent background
-hi Normal guibg=NONE ctermbg=NONE
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related

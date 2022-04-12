@@ -32,15 +32,20 @@ if has("nvim")
     Plug 'williamboman/nvim-lsp-installer'
     Plug 'pantharshit00/vim-prisma'
     Plug 'kyazdani42/nvim-tree.lua'
+    Plug 'norcalli/nvim-colorizer.lua'
+    Plug 'tribela/vim-transparent'
 endif
 
 " Themes "
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
-Plug 'techtuner/aura-neovim'
+Plug 'felixaa/aura-neovim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'junegunn/seoul256.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'sainnhe/everforest'
+Plug 'ayu-theme/ayu-vim'
+Plug 'AhmedAbdulrahman/vim-aylin'
 
 call plug#end()
