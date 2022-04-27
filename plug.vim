@@ -22,13 +22,16 @@ if has("nvim")
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'onsails/lspkind-nvim'
+    Plug 'saadparwaiz1/cmp_luasnip'
     Plug 'L3MON4D3/LuaSnip'
     Plug 'nvim-lualine/lualine.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'akinsho/bufferline.nvim'
     Plug 'numToStr/Comment.nvim'
+    Plug 'mfussenegger/nvim-dap'
     " Plug 'preservim/nerdtree'
     Plug 'NTBBloodbath/rest.nvim'
+    Plug 'nvim-telescope/telescope-dap.nvim'
     Plug 'williamboman/nvim-lsp-installer'
     Plug 'pantharshit00/vim-prisma'
     Plug 'kyazdani42/nvim-tree.lua'
@@ -47,5 +50,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'sainnhe/everforest'
 Plug 'ayu-theme/ayu-vim'
 Plug 'AhmedAbdulrahman/vim-aylin'
+Plug 'srcery-colors/srcery-vim'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 call plug#end()

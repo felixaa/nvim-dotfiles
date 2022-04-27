@@ -12,7 +12,6 @@ set encoding=utf8
 
 " Set paste MACOS
 set clipboard+=unnamedplus
-
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -128,9 +127,11 @@ autocmd BufNewFile,BufRead *.prisma setlocal filetype=prisma
 "everforest
 "ayu
 "aylin
+"srcery
+"purify
+"challenger_deep
 " let ayucolor="dark"   " for dark version of theme
 colorscheme dracula
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

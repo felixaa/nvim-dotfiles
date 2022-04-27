@@ -43,7 +43,7 @@ local on_attach = function(client, bufnr)
 
   -- formatting
   if client.name == 'tsserver' then
-    client.resolved_capabilities.document_formatting = true
+    client.resolved_capabilities.document_formatting = false
   end
 
   if client.resolved_capabilities.document_formatting then
@@ -140,7 +140,7 @@ nvim_lsp.diagnosticls.setup {
         rootPatterns = { '.git' },
       },
       prettier = {
-        command = 'prettier_d_slim',
+        command = 'prettier',
         rootPatterns = { '.git' },
         -- requiredFiles: { 'prettier.config.js' },
         args = { '--stdin', '--stdin-filepath', '%filename' }

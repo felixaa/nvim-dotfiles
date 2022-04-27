@@ -16,7 +16,7 @@ require("bufferline").setup{
     show_buffer_close_icons = true,
     show_close_icon = true,
     persist_buffer_sort = false, -- whether or not custom sorted buffers should persist
-    separator_style = "thick",
+    separator_style = "thin", -- thin, slant, thick, 
     always_show_bufferline = true,
     numbers = "ordinal",
     offsets = {{filetype = "NvimTree", text = "File Tree 🌳", text_align = "left"}},
