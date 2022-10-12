@@ -3,8 +3,13 @@ if !exists('g:loaded_cmp') | finish | endif
 set completeopt=menuone,noinsert,noselect
 
 lua <<EOF
+    local has_words_before = function()
+      local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+      return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+    end
   local cmp = require'cmp'
   local lspkind = require'lspkind'
+  local luasnip = require'luasnip'
 
   cmp.setup({
     snippet = {
@@ -44,8 +49,8 @@ lua <<EOF
         end, { "i", "s" }),
     }),
     sources = cmp.config.sources({
+      { name = 'luasnip', option = { use_show_condition = false } },
       { name = 'nvim_lsp' },
-      { name = 'luasnip' },
     }, {
       { name = 'buffer' },
     }),

@@ -103,13 +103,13 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
-" if has('nvim') || has('termguicolors')
-"     if exists('+termguicolors')
-"       let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"       let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"       set termguicolors
-"     endif
-" endif
+if has('nvim') || has('termguicolors')
+    if exists('+termguicolors')
+      let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+      let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+      set termguicolors
+    endif
+endif
 
 set termguicolors
 syntax enable
@@ -130,8 +130,18 @@ autocmd BufNewFile,BufRead *.prisma setlocal filetype=prisma
 "srcery
 "purify
 "challenger_deep
+"sonokai
+"space_vim_theme
+"pride
+"pencil
+"gruvbox
+"embark
+"hatsunemiku
+"nightfly
 " let ayucolor="dark"   " for dark version of theme
-colorscheme dracula
+
+colorscheme aura  
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -226,5 +236,3 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 " catch
 " endtry
 
-" Return to last edit position when opening files (You want this!)
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif

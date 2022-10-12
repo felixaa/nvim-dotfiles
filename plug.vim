@@ -53,5 +53,15 @@ Plug 'AhmedAbdulrahman/vim-aylin'
 Plug 'srcery-colors/srcery-vim'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'sainnhe/sonokai'
+Plug 'liuchengxu/space-vim-theme'
+Plug 'haoyu953/pride.vim'
+Plug 'preservim/vim-colors-pencil'
+Plug 'morhetz/gruvbox'
+Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+Plug '4513ECHO/vim-colors-hatsunemiku'
+Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'mangeshrex/everblush.vim'
+
 
 call plug#end()

@@ -5,20 +5,24 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
   ignore_buffer_on_setup = false,
-  open_on_setup = false,
+  open_on_setup = true,
   open_on_setup_file = false,
   open_on_tab = false,
   sort_by = "name",
   update_cwd = false,
   view = {
-    width = 50,
-    height = 50,
+    width = 38,
     side = "left",
     preserve_window_proportions = false,
     number = false,
     relativenumber = false,
     signcolumn = "yes",
+    float = {
+      enable = false,
+      quit_on_focus_loss = true,
+    },
   },
+
   hijack_directories = {
     enable = true,
     auto_open = true,
